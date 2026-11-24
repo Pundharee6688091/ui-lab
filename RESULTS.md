@@ -39,10 +39,10 @@ Tool parts that I chose: Part 2 (Selenium WebDriver in Java) and Part 4 (Cypress
 - Step 4.9 (optional), browser and result:
 
 ## Part B
-1.
-2.
-3.
-4.
-5.
-6.
-7.
+1. The three number boxes share the id `floating_filled`, so the id cannot pick one box. I would give each box its own id, such as `max-calories`.
+2. It is a consistency check. It would catch a server that saves or shows a different tool than the one it recommended.
+3. I would check that every ingredient is vegetarian. The page shows only names, but the answer of POST /api/pizza has `vegetarian` for each ingredient, so Cypress can read `response.body` with `cy.intercept`.
+4. In Java I had to write every wait myself, and `findElement` without a wait failed with `NoSuchElementException`. Cypress waits by itself, because each `cy.get` and `should` retries for up to 10 seconds. QP-01 was quicker to write in Cypress, and its video and screenshots were easier to read than Maven's text report.
+5. I would choose Selenium WebDriver. The page objects keep locators in one place, as our group's UI tests do. Cypress also gave me trouble: with Chrome 158 it crashed on the second spec of a run, and I had to upgrade it to 16.3.0.
+6. In `QP01Test` I would change the XPath written in the test, and in every other test that copies it. In `QP01PageObjectTest` I would change only the constant `MAX_CALORIES` in `HomePage.java`. The tests call methods like `setMaxCalories(600)` and never see a locator, so one line repairs them all.
+7. Cypress clears the cookies before each test, and QuickPizza uses a cookie to keep a browser on one server. If steps 6 and 7 were a second test, the admin page could come from a server that never saw my pizza, and step 7 would fail. The alias `tool` and the variable `pizzaName` would also be lost.
