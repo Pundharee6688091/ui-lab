@@ -26,8 +26,8 @@ Tool parts that I chose: Part 2 (Selenium WebDriver in Java) and Part 4 (Cypress
 `[ERROR]   FirstTest.webFormOpens:20 expected: <Web Form> but was: <Web form>`
 - Step 2.15, QP01Test run 1, result and time: Pass, 11.968 s
 - Step 2.15, QP01Test run 2, result and time: Pass, 11.759 s
-- Step 2.20, full run 1, time and number of tests:
-- Step 2.20, full run 2, time and number of tests:
+- Step 2.20, full run 1, time and number of tests: 32.058 s, 5 tests, all passed
+- Step 2.20, full run 2, time and number of tests: 24.731 s, 5 tests, all passed
 
 ## Part 4: Cypress
 - node --version, npm --version and npx cypress version:
