@@ -30,8 +30,8 @@ Tool parts that I chose: Part 2 (Selenium WebDriver in Java) and Part 4 (Cypress
 - Step 2.20, full run 2, time and number of tests: 24.731 s, 5 tests, all passed
 
 ## Part 4: Cypress
-- node --version, npm --version and npx cypress version:
-- Step 4.3, failure message for the wrong title:
+- node --version, npm --version and npx cypress version: v24.11.1, 11.6.2 and Cypress 16.2.1 (stable)
+- Step 4.3, failure message for the wrong title: Timed out retrying after 10000ms, + expected - actual, -'Web form' (what the page had) +'Web Form' (what the test expected)
 - Step 4.6, tool and calories in the answer of POST /api/pizza:
 - Step 4.7, the line of the admin list that shows your pizza:
 - Step 4.8, run 1, result, duration and pizza name:
