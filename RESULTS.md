@@ -9,17 +9,17 @@ Tool parts that I chose: Part 2 (Selenium WebDriver in Java) and Part 4 (Cypress
 - Step 0.4, locator of Excluded tools: $x("//label[normalize-space()='Excluded tools']/following-sibling::select")
 - Step 0.4, locator of Must be vegetarian: $$("#default-checkbox")
 - Step 0.4, locator of Custom Pizza Name: $$("input#pizza-name")
-- Step 0.5, pizza name, tool and calories of the run by hand:
+- Step 0.5, pizza name, tool and calories of the run by hand: Lab Pizza 20261124-100128, Pizza cutter, 425 calories per slice
 
 | Step | Actual result | Pass or fail |
 |------|---------------|--------------|
-| 1    |               |              |
-| 2    |               |              |
-| 3    |               |              |
-| 4    |               |              |
-| 5    |               |              |
-| 6    |               |              |
-| 7    |               |              |
+| 1    | The heading "Looking to break out of your pizza routine?" was shown | Pass |
+| 2    | Max Calories per Slice, Excluded tools, Must be vegetarian and Custom Pizza Name appeared | Pass |
+| 3    | The fields showed 600, Knife, vegetarian ticked and Lab Pizza 20261124-100128 | Pass |
+| 4    | Name Lab Pizza 20261124-100128, tool Pizza cutter (not Knife), 425 calories per slice (600 or fewer) | Pass |
+| 5    | "Please log in first." msg pop up | Pass |
+| 6    | The page showed "Latest pizza recommendations" | Pass |
+| 7    | The line "Lab Pizza 20261124-100128 (tool=Pizza cutter, ingredients_number=5)" was in the list | Pass |
 
 ## Part 2: Selenium WebDriver in Java
 - Step 2.4, the failure line for the wrong title:
