@@ -30,12 +30,12 @@ Tool parts that I chose: Part 2 (Selenium WebDriver in Java) and Part 4 (Cypress
 - Step 2.20, full run 2, time and number of tests: 24.731 s, 5 tests, all passed
 
 ## Part 4: Cypress
-- node --version, npm --version and npx cypress version: v24.11.1, 11.6.2 and Cypress 16.2.1 (stable)
+- node --version, npm --version and npx cypress version: v24.11.1, 11.6.2 and 16.3.0 (I upgraded from 16.2.1 to 16.3.0, because with Chrome 158 the second spec of one `npx cypress run` stopped with `* is not a valid URL`)
 - Step 4.3, failure message for the wrong title: Timed out retrying after 10000ms, + expected - actual, -'Web form' (what the page had) +'Web Form' (what the test expected)
 - Step 4.6, tool and calories in the answer of POST /api/pizza: tool Knife, calories 650
-- Step 4.7, the line of the admin list that shows your pizza:
-- Step 4.8, run 1, result, duration and pizza name:
-- Step 4.8, run 2, result, duration and pizza name:
+- Step 4.7, the line of the admin list that shows your pizza: `Lab Pizza 20261124-122453 (tool=Scissors, ingredients_number=7)`
+- Step 4.8, run 1, result, duration and pizza name: All specs passed (2 of 2), 00:14 (pizza-scenario 00:12, web-form 00:02), pizza Lab Pizza 20261124-122416
+- Step 4.8, run 2, result, duration and pizza name: All specs passed (2 of 2), 00:13 (pizza-scenario 00:11, web-form 00:01), pizza Lab Pizza 20261124-122453
 - Step 4.9 (optional), browser and result:
 
 ## Part B
